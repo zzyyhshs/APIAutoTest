@@ -22,7 +22,7 @@ class APIConfig():
     '''
     ALLURE_TEMP_DIR_PATH = get_path("test_api", "report", "temp") # 临时目录的路径
     ALLURE_REPORT_DIR_PATH = get_path("test_api", "report", "allure-report") # 测试报告的目录的路径
-
+    # allure-2.8.1的存放路径
     ALLURE_BIN_PATH = get_path("common", "allure-2.8.1", "bin")
     # # 场景 1 : 登录-----新增动物类别----删除动物类别
     # SUIT_MODULE_1 = [path("test_add_category.py") , path("test_del_category.py")]
@@ -35,4 +35,8 @@ class APIConfig():
     TEST_SUITE_2 = [get_path("test_api", "cases", "testLogin.py")]
 
     SUITE_ALL = TEST_SUITE_1
+
+
+class UIConfig():
+    CHROME_DRIVER_PATH = get_path("common", "chromedriver")
 
